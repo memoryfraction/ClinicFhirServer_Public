@@ -64,7 +64,7 @@ The system has multiple built-in roles and strictly adheres to HIPAA.Minimum Nec
 ![RolePermission1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission1.jpg)
 ![RolePermission2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission2.jpg)
 
-## 3.2 FHIR R4 API
+## 3.2 [FHIR R4 API](https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.io/swagger/index.html)
 Implement the standard FHIR R4 interface based on Spark, supporting resource types such as Patient, Encounter, and Observation.
 
 ## 3.3 Multi-tenant isolation
@@ -77,7 +77,17 @@ Rate limits: Authentication interface 10 times/minute, FHIR interface 30 times/m
 Data is deployed on Azure, and the production environment is deployed on a US node to meet the requirement that data does not leave the country.
 
 # 4. Technical Architecture
-
+```
+Azure Container Apps
+    └── ClinicFHIRServer (.NET 8 / Blazor Server)
+            ├── FHIR R4 Engine (Spark)
+            ├── RBAC Middleware
+            ├── Audit Log Middleware
+            └── Multi-Tenant Router
+                    └── Neon PostgreSQL (per-tenant DB)
+Azure Key Vault
+└── Connection string encryption key / Managed Identity
+```
 # 5. How to use
 ## 5.1. Experience the Demo
 Access the link above directly, log in with any Demo account, and explore the corresponding role's interface and FHIR API.
@@ -156,7 +166,7 @@ https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.
 ![RolePermission1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission1.jpg)
 ![RolePermission2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission2.jpg)
 
-## 3.2 FHIR R4 API
+## 3.2 [FHIR R4 API](https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.io/swagger/index.html)
 基于 Spark 实现标准 FHIR R4 接口，支持 Patient、Encounter、Observation 等资源类型。
 
 ## 3.3 多租户隔离
@@ -169,6 +179,17 @@ https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.
 数据部署在 Azure，生产环境会部署再美国节点，满足数据不出境要求
 
 # 4 技术架构
+```
+Azure Container Apps
+    └── ClinicFHIRServer (.NET 8 / Blazor Server)
+            ├── FHIR R4 Engine (Spark, BSD-3-Clause)
+            ├── RBAC Middleware
+            ├── Audit Log Middleware
+            └── Multi-Tenant Router
+                    └── Neon PostgreSQL (per-tenant DB)
+Azure Key Vault
+    └── 连接字符串加密密钥 / Managed Identity
+```
 
 # 5 如何使用
 ## 5.1. 体验 Demo
