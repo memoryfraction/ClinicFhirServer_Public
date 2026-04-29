@@ -8,7 +8,6 @@
 ## English Documentation
 
 # 0 Abstract
-
 This document, based on the source code and adhering to the principles of objectivity, rigor, and compliance, provides a user manual for ClinicFhirServer. It aims to help readers understand the project's development purpose, the problems it addresses for whom, and how to use it.
 ClinicFHIRServer partially utilizes code from FirelyTeam/Spark (BSD-3-Clause License). This part implements Swagger and the basic FHIR standard. However, a production-level FHIR project requires high-level HIPAA requirements, such as RBAC access control, 99.9% SLA, encryption of sensitive data like PHI, disaster recovery, and data not leaving the country. ClinicFHIRServer relies on cloud architectures and cloud databases like Azure and Neon, implementing mandatory features such as high availability, strong encryption, and RBAC access control.
 
@@ -16,9 +15,7 @@ ClinicFHIRServer partially utilizes code from FirelyTeam/Spark (BSD-3-Clause Lic
 Healthcare institutions face a common challenge in the process of digitalization: how to achieve data interoperability with the FHIR standard while meeting HIPAA compliance requirements?
 While open-source FHIR servers (such as FirelyTeam/Spark) are available on the market and can quickly build APIs compliant with the FHIR R4 standard, they still lack key capabilities for production-grade healthcare systems.
 
-
-ClinicFHIRServer targets small and medium-sized clinics and healthcare SaaS developers who need to quickly access FHIR compliance capabilities but lack the resources to build a complete security system themselves.
-
+![FHIR Production Level](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/FHIR%20Production%20Level-eng.jpg)
 
 
 # 2 Online Demo
@@ -26,9 +23,9 @@ https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.
 
 ## 2.1 Demo Account
 After accessing the login page, click the corresponding role button to fill in the information with one click. The password is always "Demo2026"!
+![Roles](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/roles.jpg)
 
-
-Enterprise employees can sign in using their Azure AD accounts by signing in with Microsoft.
+For paid users, the user can sign in using their Azure AD accounts by signing in with Microsoft.
 
 ## 2.2 Demo Account Role-Playing
 ### 2.2.1 TenantAdmin — Clinic Administrator
@@ -101,9 +98,7 @@ ClinicFHIRServer部分使用了FirelyTeam/Spark(BSD-3-Clause License)的代码, 
 # 1 项目背景
 医疗机构在数字化过程中面临一个共同难题：如何在满足 HIPAA 合规要求的前提下，实现 FHIR 标准的数据互操作？
 市面上已有开源 FHIR 服务器（如 FirelyTeam/Spark），能快速搭建符合 FHIR R4 标准的 API，但距离生产级医疗系统还缺少关键能力：
-
-
-image: FHIR Production Level-eng
+![FHIR Production Level](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/FHIR%20Production%20Level-eng.jpg)
 
 
 # 2 在线 Demo
@@ -111,8 +106,9 @@ https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.
 
 ## 2.1 Demo 账号
 访问登录页后，点击对应角色按钮即可一键填入，密码统一为 Demo2026!
+![Roles](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/roles.jpg)
 
-企业员工可通过 Sign in with Microsoft 使用 Azure AD 账号登录。
+对于正式付费用户，用户可通过 Sign in with Microsoft 使用 Azure AD 账号登录。
 
 ## 2.2 Demo账号角色扮演
 ### 2.2.1 TenantAdmin — 诊所管理员
