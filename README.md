@@ -29,14 +29,21 @@ For paid users, the user can sign in using their Azure AD accounts by signing in
 
 ## 2.2 Demo Account Role-Playing
 ### 2.2.1 TenantAdmin — Clinic Administrator
-Managing this tenant's users, without PHI access permissions.
+Managing this tenant's users without PHI access permissions.
 
+![TenantAdminLogin](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin.jpg)
+![TenantAdminDashboard1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin-Dashboard.jpg)
+![TenantAdminDashboard2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin-Dashboard2.jpg)
 
 ### 2.2.2 Physician
 * Access to patient, consultation, and observation data
-* Physician Login
-* Physician Dashboard
-* Patients List
+
+![PhysicianLogin](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician_login.jpg)
+![PhysicianPatient](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Dashboard.jpg)
+![PhysicianPatients](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Patient.jpg)
+![PhysicianPatientDetail](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Patient-Details.jpg)
+
+
 
 Patient Details
 ### 2.2.3 Patient — Nurse
@@ -53,6 +60,9 @@ The system has multiple built-in roles and strictly adheres to HIPAA.Minimum Nec
 * Biller
 * Auditor — an auditor who provides read-only audit logs with automatic PHI anonymization.
 * Patient — The patient can only view their own records.
+
+![RolePermission1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission1.jpg)
+![RolePermission2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission2.jpg)
 
 ## 3.2 FHIR R4 API
 Implement the standard FHIR R4 interface based on Spark, supporting resource types such as Patient, Encounter, and Observation.
@@ -84,9 +94,9 @@ https://docs.google.com/forms/d/e/1FAIpQLSdQyra9-QJhCScIuUVjfBaldFmlmK-tESpcGYdD
 This project is currently a demo version. All data is synthetic and does not involve any real PHI (Protected Health Information).
 
 # References
-https://www.hhs.gov/hipaa/index.html
-https://www.fhir.org/
-https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act
+* https://www.hhs.gov/hipaa/index.html
+* https://www.fhir.org/
+* https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act
 
 
 ## [Chinese Documentation](#chinese-documentation)
@@ -114,20 +124,20 @@ https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.
 ### 2.2.1 TenantAdmin — 诊所管理员
 管理本租户用户，无 PHI 访问权限
 
-
+![TenantAdminLogin](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin.jpg)
+![TenantAdminDashboard1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin-Dashboard.jpg)
+![TenantAdminDashboard2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/TenantAdmin-Dashboard2.jpg)
 
 
 ### 2.2.2 Physician — 医生
-可访问患者、就诊、观察数据
+可访问自己的患者、就诊、观察数据
 
-* Physician Login
+![PhysicianLogin](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician_login.jpg)
+![PhysicianPatient](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Dashboard.jpg)
+![PhysicianPatients](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Patient.jpg)
+![PhysicianPatientDetail](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Physician-Patient-Details.jpg)
 
-* Physician Dashboard
 
-
-* Patients List
-
-Patient Details
 ### 2.2.3 Patient — 护士
 可访问自己的患者和观察数据
 
@@ -142,6 +152,9 @@ Patient Details
 * Biller — 账单员
 * Auditor — 审计员，只读审计日志，PHI 自动脱敏
 * Patient — 患者，仅可查看本人记录
+
+![RolePermission1](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission1.jpg)
+![RolePermission2](https://github.com/memoryfraction/ClinicFhirServer_Public/blob/main/images/Role_Permission2.jpg)
 
 ## 3.2 FHIR R4 API
 基于 Spark 实现标准 FHIR R4 接口，支持 Patient、Encounter、Observation 等资源类型。
@@ -173,7 +186,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdQyra9-QJhCScIuUVjfBaldFmlmK-tESpcGYdD
 本项目目前为 Demo 版本，所有数据均为合成假数据，不涉及任何真实 PHI（受保护健康信息）。 This is a demo deployment. All data is synthetic. No real PHI is involved.
 
 # 参考资料
-https://www.hhs.gov/hipaa/index.html
-https://www.fhir.org/
-https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act
+* https://www.hhs.gov/hipaa/index.html
+* https://www.fhir.org/
+* https://www.fda.gov/regulatory-information/selected-amendments-fdc-act/21st-century-cures-act
 
