@@ -92,9 +92,15 @@ Azure Key Vault
 ## 5.1. Experience the Demo
 Access the link above directly, log in with any Demo account, and explore the corresponding role's interface and FHIR API.
 
+https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.io/
+
 ## 5.2 Calling the FHIR API
 After logging in, you can access the REST API via Swagger UI or by directly calling it.
-
+```
+GET /fhir/Patient
+Authorization: Bearer <your_token>
+X-Tenant-ID: <your_tenant_id>
+```
 
 ## 5.3 Feedback
 If you have any questions or suggestions during use, please feel free to provide feedback through the following methods:
@@ -195,9 +201,15 @@ Azure Key Vault
 ## 5.1. 体验 Demo
 直接访问上方链接，选择任意 Demo 账号登录，探索对应角色的功能界面和 FHIR API。
 
+https://clinic-fhir-server-app.blackdesert-8e20099d.eastasia.azurecontainerapps.io/
+
 ## 5.2 调用 FHIR API
 登录后，通过 Swagger UI 或直接调用 REST API：
-
+```
+GET /fhir/Patient
+Authorization: Bearer <your_token>
+X-Tenant-ID: <your_tenant_id>
+```
 
 ## 5.3 Feedback
 使用过程中有任何问题或建议，欢迎通过以下方式反馈：
